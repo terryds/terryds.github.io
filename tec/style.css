@@ -1,0 +1,196 @@
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  40% { border-color: #2980b9; }
+}
+
+.hero {
+  background: linear-gradient(rgba(52, 73, 94,0.5),rgba(52, 73, 94,0.5)), url("img/home.jpg");
+  background-size: cover;
+
+}
+
+.hero-body {
+  padding-top: 5rem !important;
+}
+
+#tippik h1 {
+  margin-bottom: 1em;
+}
+
+.landing-container {
+  padding: 50px;
+  margin-top: 8rem;
+}
+.landing-container .search-box {
+  height: 80px;
+  padding: 10px;
+}
+
+.search-block, .dropdown, .extras-block {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  margin-top: -10px;
+  border-right: 2px solid rgba(10, 10, 10, 0.1);
+  background: #fff;
+  transition: all 0.3s ease;
+}
+.search-block.focus, .dropdown.focus, .extras-block.focus {
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown .button {
+  display: flex;
+  align-items: center;
+  outline: none;
+  border: 1px solid #b1b1b1;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  font-size: 1em;
+  margin-right: 4px;
+  color: #4c4c4c;
+  padding: 0 .825em;
+  z-index: 0;
+  border-radius: 0px;
+  border: 0px;
+}
+.dropdown .button span {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  padding-bottom: 5px;
+  font-size: 1.5em;
+  background: none;
+  color: #a9a9a9;
+  width: 90%;
+  height: 30px;
+  border: none;
+  appearance: none;
+  outline: none;
+}
+.dropdown .dropdown-container .control {
+  padding-bottom: 0;
+  width: 100%;
+  border-radius: 0;
+  border-top: none;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  z-index: 10;
+  font-size: 14px;
+  
+
+}
+
+.dropdown .dropdown-container select {
+  border: 0;
+  font-size: 1.5em;
+  color: #5a6674;
+  width: 90%;
+}
+
+.search-label, .price-label {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  color: #5a6674;
+  z-index: 999;
+}
+
+.search-input {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  padding-bottom: 5px;
+  font-size: 1.5em;
+  background: none;
+  color: #5a6674;
+  width: 90%;
+  height: 30px;
+  border: none;
+  appearance: none;
+  outline: none;
+}
+.search-input::-webkit-search-cancel-button {
+  appearance: none;
+}
+.search-input:focus {
+  border-bottom: 1px solid #009688;
+}
+
+.landing-container .search-box {
+  height: 80px;
+  padding: 10px 0 10px 10px;
+}
+.landing-container .search-box .search-button {
+  width: 100%;
+  height: 80px;
+  margin-top: -10px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.checkbox input[type="checkbox"] {
+  margin-left: 0px;
+}
+
+.checkbox {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.checkbox input[type=checkbox], label input[type=checkbox] {
+  opacity: 0;
+  position: absolute;
+  margin: 0;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  left: 0;
+  pointer-events: none;
+}
+
+.checkbox .checkbox-material .check {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.54);
+  border-radius: 2px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.checkbox input[type=checkbox]:checked ~ .checkbox-material .check {
+  color: #009688;
+  padding: 1px 0 0px 1px;
+}
+
+.checkbox .checkbox-material {
+  vertical-align: middle;
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+}
+
+.checkbox input[type=checkbox]:checked ~ .checkbox-material .check:before {
+  color: #009688;
+  font: normal normal normal 14px/1 FontAwesome;
+  content: "\f00c";
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

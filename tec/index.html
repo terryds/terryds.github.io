@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tippik!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bulma/bulma.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+  </head>
+
+  <body>
+
+  	<section class="hero is-modern-gray is-large">
+  	  <div class="hero-head">
+  	    <nav class="navbar">
+  	      <div class="container">
+  	        <div class="navbar-brand">
+  	          <span class="navbar-burger burger" data-target="navbarMenuHeroB">
+  	            <span></span>
+  	            <span></span>
+  	            <span></span>
+  	          </span>
+  	        </div>
+  	        <div id="navbarMenuHeroB" class="navbar-menu">
+  	          <div class="navbar-end">
+  	            <a class="navbar-item is-active">
+  	              Beranda
+  	            </a>
+  	            <a class="navbar-item">
+  	              Temukan
+  	            </a>
+  	            <span class="navbar-item">
+  	              <a class="button is-modern-gray is-inverted">
+  	                <span class="icon">
+  	                  <i class="fa fa-sign-in"></i>
+  	                </span>
+  	                <span>Sign In</span>
+  	              </a>
+  	            </span>
+  	          </div>
+  	        </div>
+  	      </div>
+  	    </nav>
+  	  </div>
+
+  	  <div class="hero-body">
+  	  		<div class="container has-text-centered" id="tippik">
+  	  		  <h1 class="title">
+  	  		    Tippik! 
+  	  		  </h1>
+  	  		  <h2 class="subtitle">
+  	  		  	Cara Cari Kosan Paling Asyik!
+  	  		  </h2>
+  	  		</div>
+
+
+		    <div class='container landing-container'>
+		      <div class='columns is-mobile box search-box'>
+		      	<div class="column is-3 is-paddingless dropdown">
+		   		  <label class='price-label label'>
+		   		    <span>Jenis</span>
+		   		  </label>
+		   		  <div class='dropdown-container'>
+		   		    <div class="control">
+		   		      <select>
+		   		        <option>Pondokan</option>
+		   		        <option>Coming soon..</option>
+		   		      </select>
+		   		    </div>
+		   		  </div>		
+		      	</div>
+		        <div class='column is-8 is-paddingless'>
+		          <form class='search-block'>
+		            <label class='search-label label'>
+		              <span>Alamat</span>
+		            </label>
+		            <input class='search-input home-input' placeholder='Address, City, State' type='/search' value=''>
+		          </form>
+		        </div>
+		        <div class='column is-1 is-paddingless'>
+		          <a class='button is-info is-large search-button'><i class="fa fa-search"></i></a>
+		        </div>
+		      </div>
+		    </div>
+  	  </div>
+
+  	  <div class="hero-foot">
+
+  	  </div>
+  	</section>
+
+  	 <script>
+  	 		// var el = document.querySelector(".price-block a");
+  	 		// el.onclick = function() {
+  	 		// 	event.preventDefault();
+  	 		// 	var dropdown = document.querySelector(".price-block .dropdown-container");
+  	 		// 	var className = ' ' + dropdown.className + ' ';
+
+  	 		// 	if ( ~className.indexOf(' is-open ') ) {
+  	 		// 	    dropdown.className = className.replace(' is-open ', ' ');
+  	 		// 	} else {
+  	 		// 	    dropdown.className += ' is-open';
+  	 		// 	} 
+  	 		// }
+
+  	 		document.addEventListener('DOMContentLoaded', function () {
+
+  	 		  // Get all "navbar-burger" elements
+  	 		  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  	 		  // Check if there are any navbar burgers
+  	 		  if ($navbarBurgers.length > 0) {
+
+  	 		    // Add a click event on each of them
+  	 		    $navbarBurgers.forEach(function ($el) {
+  	 		      $el.addEventListener('click', function () {
+
+  	 		        // Get the target from the "data-target" attribute
+  	 		        var target = $el.dataset.target;
+  	 		        var $target = document.getElementById(target);
+
+  	 		        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+  	 		        $el.classList.toggle('is-active');
+  	 		        $target.classList.toggle('is-active');
+
+  	 		      });
+  	 		    });
+  	 		  }
+
+  	 		});
+  		</script>
+  </body>
+</html>
