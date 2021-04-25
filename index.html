@@ -1,78 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <link rel="shortcut icon" href="https://seiturju.sirv.com/Terry/chatbiz.jpg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#e1dee7" />
-  <meta
-          name="description"
-          content="Home of Terry Djony"
-  />  
-  <link rel="stylesheet" href="./fonts.css">
-  <link rel="stylesheet" href="./libs/bootstrap/4.3.1/css/bootstrap.min.css">
-     <title>Terry Djony</title>
-     <style>
-       body{
-         background-color: #1b262c;
-         color: #cee4f5;
-       }
-       h5{
-             color: #e1dee7;
-       }
-       .name{
-           color: #fffffc;
-       }
-       .love{
-           color: #ed6663 !important;
-       }
-       /*----------------- Mail-------------------- */
-       #email{
-           text-decoration: none;
-           color:#beb7a4;
-       }
-       .footer{
-           margin-top: 5% !important;
-           margin-bottom: 10px;
-       }
-       @media (max-width: 479px) {
-            .footer{
-            margin-top: 35% !important;
-            }
-       }
-     </style>
-</head>
-<body>
-<div class="container">
-  <div class="media mt-5">
-    <img src="https://seiturju.sirv.com/Terry/chatbiz.jpg" class="m-3" alt="image" width="75px" height="75px">
-    <div class="media-body m-2">
-      <h5 class="align-items-center mt-2 name">Terry Djony</h5>
-      <p>Hello!
-      I am Terry Djony
-      From Bandung, Indonesia.</p>
-    </div>
-  </div>
-<div class="mt-4">
-  <a href="https://www.linkedin.com/in/terry-djony-chatbiz-id/" class="btn btn-outline-light btn-block" role="button" target="_blank"><span class="icon-linkedin"></span> LinkedIn</a>
-  <br>
-  <a href="https://twitter.com/Terry_Djony/" class="btn btn-outline-light btn-block" role="button" target="_blank"><span class="icon-twitter"></span> Twitter</a>
-  <br>
-  <a href="https://instagram.com/terrydjony" class="btn btn-outline-light btn-block" role="button" target="_blank"><span class="icon-instagram"></span> Instagram</a>
-  <br>
-  <a href="https://github.com/terryds" class="btn btn-outline-light btn-block" role="button" target="_blank"><span class="icon-github"></span> Github</a>
-  <br>
-</div>
-        <!--------------------Footer---------------------------->
-  <div class="footer mt-5">
-    <hr/>
-    <h6>Made With <span class="love">♥</span>  in Bandung, Indonesia</h6>
-    <h6>
-      <a id="email" href="https://twitter.com/messages/compose?recipient_id=452829431" target="_blank"><span class="icon-envelope-o"></span>  Contact me via Twitter DM</a>
-  </div>
-</div>
 
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Terry Djony - Homepage</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="icon" href="assets/imagens/favicon.png" type="image/x-icon" />
+    <script type="text/javascript" src="assets/js/script.js"></script>
+</head>
+
+<body>
+    <i onclick="mostrar(this)" class="fa fa-moon-o fa-2x night_mode"></i>
+
+    <img id="userPhoto" src="assets/imagens/biru-full.jpg" alt="User Photo">
+
+    <spam id="userName">Terry Djony</spam>
+    <p id="bio">Founder at Chatbiz (YC W21)<br />I like Startups, Engineering, Memes, and Building Connections</p>
+
+    <div id="links">
+        <a class="link" href="https://twitter.com/Terry_Djony" target="_blank" style="border-radius: 25px;"><i
+                class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+        <a class="link" href="https://instagram.com/terrydjony" target="_blank" style="border-radius: 25px;"><i
+                class="fa fa-instagram"></i> Instagram</a>
+        <a class="link" href="#" target="_blank" style="border-radius: 25px;"><i
+            class="fa fa-pencil" aria-hidden="true"></i> Blog (Under Construction)</a>
+        <a class="link" href="https://calendly.com/terrydjony/meet" target="_blank" style="border-radius: 25px;"><i
+                class="fa fa-globe" aria-hidden="true"></i> Book a Meeting</a>
+    </div>
+
+    <div class="footer">
+        <a href="https://github.com/terryds" target="_blank">
+            <i style="line-height: 38px;" class="fa fa-github circulo" aria-hidden="true"></i>
+        </a>
+        <a href="https://instagram.com/terrydjony" target="_blank">
+            <i style="line-height: 38px;" class="fa fa-instagram circulo" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/terry-djony-chatbiz-id" target="_blank">
+            <i style="line-height: 38px;" class="fa fa-linkedin circulo" aria-hidden="true"></i>
+        </a>
+
+        <a href="https://twitter.com/Terry_Djony" target="_blank">
+            <i style="line-height: 38px;" class="fa fa-twitter circulo" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    <!-- Javascript -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
-
