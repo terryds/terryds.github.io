@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./index.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
     <script>
     window.addEventListener('DOMContentLoaded', () => {
-      VANTA.GLOBE({
+      VANTA.NET({
         el: "#vanta",
         mouseControls: true,
         touchControls: true,
@@ -18,8 +18,10 @@
         minWidth: 200.00,
         scale: 1.00,
         scaleMobile: 0.50,
-        color: 0x3fd1ff,
-        backgroundColor: 0x151e3c
+        color: 0x3f99ff,
+        backgroundColor: 0x15153c,
+        points: 6.00,
+        maxDistance: 21.00
       })
 
       setTimeout(() => {
