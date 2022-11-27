@@ -79,12 +79,12 @@ a:hover {
 }
 
 .profile h1 {
-  font-size: 1.6em;
+  font-size: 1.25em;
 }
 
 .profile img {
-  width: 200px;
-  height: 200px;
+  width: 168px;
+  height: 168px;
   border-radius: 50%;
   margin: 0 1em;
 }
@@ -97,11 +97,12 @@ a:hover {
 .profile .bio {
   color: white;
   margin-top: 10px;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 .links {
   margin-top: 25px;
+  font-size: 0.8em;
 }
 
 .links .contactbutton {
@@ -138,6 +139,16 @@ a:hover {
   font-size: 0.9em;
   margin: 0px;
   line-height: 1em;
+}
+
+.link h2.title {
+  font-size: 0.9em;
+  margin-bottom: 0.25em;
+}
+
+.link h3.subtitle {
+  font-size: 0.7em;
+  color: #DEDEDE;
 }
 
 .link .image-float {
